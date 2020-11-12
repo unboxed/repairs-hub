@@ -14,6 +14,7 @@ gem "webpacker", "~> 4.0"
 group :development, :test do
   gem "brakeman", require: false
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
+  gem "pry-byebug"
   gem "rspec-rails", "~> 4.0.1"
   gem "rubocop-performance", require: false
   gem "rubocop-rails", require: false
