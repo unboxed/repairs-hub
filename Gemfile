@@ -12,6 +12,7 @@ gem "rails", "~> 6.0.3"
 gem "webpacker", "~> 4.0"
 
 group :development, :test do
+  gem "brakeman", require: false
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
   gem "rspec-rails", "~> 4.0.1"
   gem "rubocop-performance", require: false
