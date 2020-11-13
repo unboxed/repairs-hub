@@ -1,9 +1,13 @@
 import React from 'react'
 import Layout from './Layout/index'
+import Search from './Search/Search'
 
 const App = () => {
   return (
-    <Layout />
+    <div>
+      <Layout />
+      <Search />
+    </div>
   )
 }
 
