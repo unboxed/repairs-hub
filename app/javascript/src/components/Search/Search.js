@@ -11,10 +11,16 @@ const Search = () => {
 
   async function searchForProperties() {
     setLoading(true)
-    const data = await getProperties(searchParams)
+
+    try {
+      const data = await getProperties(searchParams)
+      setProperties(data)
+    } catch (e) {
+      setProperties(null)
+      console.log('An error has occured:', e)
+    }
 
     setLoading(false)
-    setProperties(data)
   }
 
   const handleSubmit = (e) => {
