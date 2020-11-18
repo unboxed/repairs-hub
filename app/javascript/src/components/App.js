@@ -9,11 +9,13 @@ class App extends Component {
   render() {
     return (
       <Layout>
-        <Switch>
-          <Route exact path="/" component={Search}/>
-          <Route exact path="/properties" component={PropertiesTable}/>
-          <Route exact path="/properties/:propertyReference" component={PropertyView}/>
-        </Switch>
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Search}/>
+            <Route exact path="/properties" component={PropertiesTable}/>
+            <Route exact path="/properties/:propertyReference" component={PropertyView}/>
+          </Switch>
+        </Router>
       </Layout>
     )
   }

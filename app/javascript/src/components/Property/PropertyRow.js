@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 const PropertyRow = ({ propertyReference, address, hierarchyType }) => (
   <tr className="govuk-table__row govuk-table__row--clickable">
@@ -8,10 +7,8 @@ const PropertyRow = ({ propertyReference, address, hierarchyType }) => (
     <td className="govuk-table__cell">{hierarchyType.subTypeDescription}</td>
 
     <td className="govuk-table__cell">
-      <Link to ={`/properties/${propertyReference}`} >{propertyReference}
-      </Link>
+      <a href={`/properties/${propertyReference}`}>{propertyReference}</a>
     </td>
-
   </tr>
 )
 
