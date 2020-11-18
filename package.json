@@ -1,6 +1,9 @@
 {
   "name": "repairs_hub",
   "private": true,
+  "scripts": {
+    "test": "jest"
+  },
   "dependencies": {
     "@babel/preset-react": "^7.12.5",
     "@rails/activestorage": "^6.0.0",
