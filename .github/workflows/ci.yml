@@ -29,6 +29,11 @@ jobs:
       run: |
         sudo apt-get -yqq install libpq-dev
 
+    - name: Install Yarn
+      uses: borales/actions-yarn@v2.0.0
+      with:
+        cmd: install
+
     - name: Cache Ruby Gems
       uses: actions/cache@v1
       with:
@@ -53,3 +58,8 @@ jobs:
         RAILS_ENV: test
       run: |
         bundle exec rake
+
+    - name: Run Javascript Tests
+      uses: borales/actions-yarn@v2.0.0
+      with:
+        cmd: test
