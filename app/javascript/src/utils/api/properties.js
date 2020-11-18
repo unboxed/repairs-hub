@@ -2,7 +2,7 @@ import axios from 'axios'
 
 export const getProperties = async (params) => {
   const { data } = await axios.get(
-    `http://localhost:3000/api/v1/properties?q=${params}`
+    `http://localhost:3000/api/v1/properties/?q=${params}`
   )
 
   return data
@@ -10,7 +10,7 @@ export const getProperties = async (params) => {
 
 export const getProperty = async (propertyReference) => {
   const { data } = await axios.get(
-    `http://localhost:3000/api/v1/properties/${propertyReference}.json`
+    `http://localhost:3000/api/v1/properties/${propertyReference}`
   )
 
   return data

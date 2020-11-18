@@ -1,6 +1,6 @@
 import React from 'react'
-import { Header } from 'lbh-frontend-react';
-import PhaseBanner from '../PhaseBanner/PhaseBanner';
+import { Header } from 'lbh-frontend-react'
+import PhaseBanner from '../PhaseBanner/PhaseBanner'
 
 const HeaderComponent = ({ serviceName }) => (
   <div>
