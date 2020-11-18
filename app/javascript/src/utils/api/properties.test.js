@@ -8,7 +8,7 @@ describe('getProperties', () => {
   it('fetches successfully data from an API', async () => {
     const properties = [
       {
-        "propertyReference": "00023404",
+        "propertyReference": "00012345",
         "address": {
           "shortAddress": "16 Pitcairn House  St Thomass Square",
           "postalCode": "E9 6PT"
@@ -20,7 +20,7 @@ describe('getProperties', () => {
         }
       },
       {
-        "propertyReference": "00023389",
+        "propertyReference": "00012346",
         "address": {
           "shortAddress": "1 Pitcairn House  St Thomass Square",
           "postalCode": "E9 6PT"
@@ -52,7 +52,7 @@ describe('getProperties', () => {
 describe('getProperty', () => {
   it('fetches successfully data from an API', async () => {
     const property = {
-      "propertyReference": "00023404",
+      "propertyReference": "00012345",
       "address": {
         "shortAddress": "16 Pitcairn House  St Thomass Square",
         "postalCode": "E9 6PT"
@@ -70,12 +70,12 @@ describe('getProperty', () => {
       })
     )
 
-    const response = await getProperty('00023404')
+    const response = await getProperty('00012345')
 
     expect(response).toEqual(property)
     expect(mockAxios.get).toHaveBeenCalledTimes(1)
     expect(mockAxios.get).toHaveBeenCalledWith(
-      `${propertiesEndpointURL}00023404`
+      `${propertiesEndpointURL}00012345`
     )
   })
 })

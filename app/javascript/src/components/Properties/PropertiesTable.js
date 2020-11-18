@@ -5,8 +5,9 @@ const PropertiesTable = ({ properties }) => (
   <div>
     <hr className="govuk-section-break govuk-section-break--l govuk-section-break--visible" />
 
-    <table className="govuk-table">
-      <caption className="govuk-table__caption">We found {properties.length} results</caption>
+    <p className="govuk-heading-s">We found {properties.length} matching results</p>
+
+    <table className="govuk-table govuk-!-margin-top-5">
       <thead className="govuk-table__head">
         <tr className="govuk-table__row">
           <th scope="col" className="govuk-table__header">Address</th>

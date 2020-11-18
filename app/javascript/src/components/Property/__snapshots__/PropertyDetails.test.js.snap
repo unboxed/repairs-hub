@@ -3,9 +3,11 @@
 exports[`PropertyDetails component should render properly 1`] = `
 <DocumentFragment>
   <div>
-    <h2>
+    <h1
+      class="govuk-heading-l"
+    >
       Dwelling: 16 Pitcairn House  St Thomass Square
-    </h2>
+    </h1>
     <div
       class="govuk-grid-row"
     >
@@ -22,13 +24,13 @@ exports[`PropertyDetails component should render properly 1`] = `
           </span>
           <br />
           <span
-            class="govuk-!-font-weight-bold"
+            class="govuk-!-font-weight-bold text-green"
           >
             16 Pitcairn House  St Thomass Square
           </span>
           <br />
           <span
-            class="govuk-body-xs"
+            class="govuk-body-xs text-green"
           >
             E9 6PT
           </span>

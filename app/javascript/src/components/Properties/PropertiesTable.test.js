@@ -6,7 +6,7 @@ describe('PropertiesTable component', () => {
   const props = {
     properties: [
       {
-        "propertyReference": "00023404",
+        "propertyReference": "00012345",
         "address": {
           "shortAddress": "16 Pitcairn House  St Thomass Square",
           "postalCode": "E9 6PT"
@@ -18,7 +18,7 @@ describe('PropertiesTable component', () => {
         }
       },
       {
-        "propertyReference": "00023389",
+        "propertyReference": "00012346",
         "address": {
           "shortAddress": "1 Pitcairn House  St Thomass Square",
           "postalCode": "E9 6PT"

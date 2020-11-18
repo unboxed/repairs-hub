@@ -2,9 +2,9 @@ import React from 'react'
 
 const PropertyDetails = ({ propertyReference, address, hierarchyType }) => (
   <div>
-    <h2>
+    <h1 className="govuk-heading-l">
       {hierarchyType.subTypeDescription}: {address.shortAddress}
-    </h2>
+    </h1>
 
     <div className="govuk-grid-row">
       <div className="govuk-grid-column-one-half">
@@ -13,11 +13,11 @@ const PropertyDetails = ({ propertyReference, address, hierarchyType }) => (
             Property details
           </span>
           <br></br>
-          <span className="govuk-!-font-weight-bold">
+          <span className="govuk-!-font-weight-bold text-green">
             {address.shortAddress}
           </span>
           <br></br>
-          <span className="govuk-body-xs">
+          <span className="govuk-body-xs text-green">
             {address.postalCode}
           </span>
           <br></br>

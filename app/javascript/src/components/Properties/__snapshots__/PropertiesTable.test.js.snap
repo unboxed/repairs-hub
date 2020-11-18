@@ -6,14 +6,14 @@ exports[`PropertiesTable component should render properly 1`] = `
     <hr
       class="govuk-section-break govuk-section-break--l govuk-section-break--visible"
     />
-    <table
-      class="govuk-table"
+    <p
+      class="govuk-heading-s"
     >
-      <caption
-        class="govuk-table__caption"
-      >
-        We found 2 results
-      </caption>
+      We found 2 matching results
+    </p>
+    <table
+      class="govuk-table govuk-!-margin-top-5"
+    >
       <thead
         class="govuk-table__head"
       >
@@ -55,7 +55,11 @@ exports[`PropertiesTable component should render properly 1`] = `
           <td
             class="govuk-table__cell"
           >
-            16 Pitcairn House  St Thomass Square
+            <a
+              href="/properties/00012345"
+            >
+              16 Pitcairn House  St Thomass Square
+            </a>
           </td>
           <td
             class="govuk-table__cell"
@@ -70,11 +74,7 @@ exports[`PropertiesTable component should render properly 1`] = `
           <td
             class="govuk-table__cell"
           >
-            <a
-              href="/properties/00023404"
-            >
-              00023404
-            </a>
+            00012345
           </td>
         </tr>
         <tr
@@ -83,7 +83,11 @@ exports[`PropertiesTable component should render properly 1`] = `
           <td
             class="govuk-table__cell"
           >
-            1 Pitcairn House  St Thomass Square
+            <a
+              href="/properties/00012346"
+            >
+              1 Pitcairn House  St Thomass Square
+            </a>
           </td>
           <td
             class="govuk-table__cell"
@@ -98,11 +102,7 @@ exports[`PropertiesTable component should render properly 1`] = `
           <td
             class="govuk-table__cell"
           >
-            <a
-              href="/properties/00023389"
-            >
-              00023389
-            </a>
+            00012346
           </td>
         </tr>
       </tbody>

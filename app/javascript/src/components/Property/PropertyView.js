@@ -3,7 +3,7 @@ import { getProperty } from '../../utils/api/properties'
 import PropertyDetails from './PropertyDetails'
 
 const PropertyView = (props) => {
-  const [property, setProperty] = useState({});
+  const [property, setProperty] = useState({})
   const [loading, setLoading] = useState(false)
 
   const getPropertyView = async (propertyReference) => {

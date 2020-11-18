@@ -5,7 +5,7 @@ import PropertyDetails from './PropertyDetails'
 describe('PropertyDetails component', () => {
   const props = {
     property: {
-      "propertyReference": "00023404",
+      "propertyReference": "00012345",
       "address": {
         "shortAddress": "16 Pitcairn House  St Thomass Square",
         "postalCode": "E9 6PT"
@@ -17,6 +17,7 @@ describe('PropertyDetails component', () => {
       }
     }
   }
+
   it('should render properly', () => {
     const { asFragment } = render(<PropertyDetails
                                     propertyReference={props.property.propertyReference}
