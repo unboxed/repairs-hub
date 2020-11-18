@@ -8,7 +8,7 @@ const Layout = ({ children }) => (
 
     <div className="govuk-width-container">
       <main
-        className="govuk-main-wrapper"
+        className="govuk-main-wrapper repairs-hub-main-wrapper"
         id="content"
         role="main"
       >

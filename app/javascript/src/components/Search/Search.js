@@ -31,15 +31,17 @@ const Search = () => {
   return (
     <div>
       <section className="section">
+        <h1 className="govuk-heading-m">Find property</h1>
+
         <div className="govuk-form-group">
           <form>
             <label
               className="govuk-label">
-              Search by postcode or address
+              <p className="govuk-body-s govuk-!-margin-bottom-0">Search by postcode or address</p>
             </label>
             <input
               type="text"
-              className="govuk-input govuk-input--width-10"
+              className="govuk-input govuk-input--width-10 focus-colour govuk-!-margin-bottom-5"
               value={searchParams}
               onChange={event => setSearchParams(event.target.value)}
             />
