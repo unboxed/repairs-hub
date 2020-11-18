@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import axios from 'axios'
 import PropertiesTable from '../Properties/PropertiesTable'
 import Button from '../Form/Button/Button'
 import { getProperties } from '../../utils/api/properties'
