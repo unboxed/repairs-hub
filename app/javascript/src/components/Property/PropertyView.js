@@ -7,8 +7,6 @@ const PropertyView = (props) => {
   const [loading, setLoading] = useState(false)
 
   const getPropertyView = async (propertyReference) => {
-    setLoading(false)
-
     try {
       const data = await getProperty(propertyReference)
       setProperty(data)
@@ -16,6 +14,8 @@ const PropertyView = (props) => {
       setProperty(null)
       console.log('An error has occured:', e)
     }
+
+    setLoading(false)
   }
 
   useEffect(() => {

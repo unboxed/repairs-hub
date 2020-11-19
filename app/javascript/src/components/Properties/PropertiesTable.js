@@ -9,7 +9,7 @@ const PropertiesTable = ({ properties }) => (
 
     <table className="govuk-table govuk-!-margin-top-5">
       <thead className="govuk-table__head">
-        <tr className="govuk-table__row">
+        <tr className="govuk-table__row govuk-body">
           <th scope="col" className="govuk-table__header">Address</th>
           <th scope="col" className="govuk-table__header">Postcode</th>
           <th scope="col" className="govuk-table__header">Property type</th>

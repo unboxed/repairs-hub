@@ -7,6 +7,7 @@ const Search = () => {
   const [searchParams, setSearchParams] = useState('')
   const [properties, setProperties] = useState([])
   const [loading, setLoading] = useState(false)
+  const [searching, setSearching] = useState(true)
 
   async function searchForProperties() {
     setLoading(true)
@@ -25,7 +26,22 @@ const Search = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
 
+    setSearching(true)
     searchForProperties()
+    setSearching(false)
+  }
+
+  const renderSearchResults = () => {
+    if(properties?.length > 0) {
+      return <PropertiesTable properties={properties} />
+    } else {
+      return (
+        <div>
+          <hr className="govuk-section-break govuk-section-break--l govuk-section-break--visible" />
+          <p className="govuk-heading-s">We found {properties.length} matching results</p>
+        </div>
+      )
+    }
   }
 
   return (
@@ -54,7 +70,7 @@ const Search = () => {
         <div>Searching...</div>
       ) : (
         <>
-          {properties?.length > 0 && <PropertiesTable properties={properties} />}
+          {!searching && renderSearchResults()}
         </>
       )}
     </div>
