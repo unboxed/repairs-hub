@@ -6,7 +6,7 @@ exports[`PropertyDetails component should render properly 1`] = `
     <h1
       class="govuk-heading-l"
     >
-      Dwelling: 16 Pitcairn House  St Thomass Square
+      Dwelling: 16 Pitcairn House
     </h1>
     <div
       class="govuk-grid-row"
@@ -26,7 +26,13 @@ exports[`PropertyDetails component should render properly 1`] = `
           <span
             class="govuk-!-font-weight-bold text-green"
           >
-            16 Pitcairn House  St Thomass Square
+            16 Pitcairn House
+          </span>
+          <br />
+          <span
+            class="govuk-!-font-weight-bold text-green"
+          >
+            St Thomass Square
           </span>
           <br />
           <span

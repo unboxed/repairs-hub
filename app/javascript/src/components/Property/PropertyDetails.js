@@ -3,7 +3,7 @@ import React from 'react'
 const PropertyDetails = ({ propertyReference, address, hierarchyType }) => (
   <div>
     <h1 className="govuk-heading-l">
-      {hierarchyType.subTypeDescription}: {address.shortAddress}
+      {hierarchyType.subTypeDescription}: {address.addressLine}
     </h1>
 
     <div className="govuk-grid-row">
@@ -14,9 +14,17 @@ const PropertyDetails = ({ propertyReference, address, hierarchyType }) => (
           </span>
           <br></br>
           <span className="govuk-!-font-weight-bold text-green">
-            {address.shortAddress}
+            {address.addressLine}
           </span>
           <br></br>
+          {address.streetSuffix &&
+           <>
+            <span className="govuk-!-font-weight-bold text-green">
+              {address.streetSuffix}
+            </span>
+            <br></br>
+           </>
+          }
           <span className="govuk-body-xs text-green">
             {address.postalCode}
           </span>
