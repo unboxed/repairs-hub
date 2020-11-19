@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import PropertiesTable from '../Properties/PropertiesTable'
 import Button from '../Form/Button/Button'
+import Spinner from '../Spinner/Spinner'
 import { getProperties } from '../../utils/api/properties'
 
 const Search = () => {
@@ -67,7 +68,7 @@ const Search = () => {
       </section>
 
       {loading ? (
-        <div>Searching...</div>
+        <Spinner />
       ) : (
         <>
           {!searching && renderSearchResults()}

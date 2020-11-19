@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { getProperty } from '../../utils/api/properties'
 import PropertyDetails from './PropertyDetails'
+import Spinner from '../Spinner/Spinner'
 
 const PropertyView = (props) => {
   const [property, setProperty] = useState({})
@@ -28,7 +29,7 @@ const PropertyView = (props) => {
   return (
     <>
       {loading ? (
-        <div>Loading...</div>
+        <Spinner />
       ) : (
         <>
           {property && property.address && property.hierarchyType &&
